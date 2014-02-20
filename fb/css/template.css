@@ -1,0 +1,77 @@
+@-webkit-keyframes bluePulse {
+    from {
+    -webkit-box-shadow: 0 0 5px white; 
+    -moz-box-shadow: 0 0 5px white; 
+    box-shadow: 0 0 5px white; 
+}
+50% { 
+    -webkit-box-shadow: 0 0 35px cyan; 
+    -moz-box-shadow: 0 0 35px cyan; 
+    box-shadow: 0 0 35px cyan; 
+}
+to {
+    -webkit-box-shadow: 0 0 5px white; 
+    -moz-box-shadow: 0 0 5px white; 
+    box-shadow: 0 0 5px white; 
+}
+}
+
+.login {
+    -moz-box-shadow:inset 0px 1px 5px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 5px 0px #ffffff;
+    box-shadow:inset 0px 1px 5px 0px #ffffff;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #bdbdbd) );
+    background:-moz-linear-gradient( center top, #f9f9f9 5%, #bdbdbd 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#bdbdbd');
+    background-color:#f9f9f9;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    color:#3792cf;
+    font-family:arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #ffffff;
+    -webkit-animation-name: bluePulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    margin-right: 20px;
+}
+.login:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #bdbdbd), color-stop(1, #f9f9f9) );
+    background:-moz-linear-gradient( center top, #bdbdbd 5%, #f9f9f9 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bdbdbd', endColorstr='#f9f9f9');
+    background-color:#bdbdbd;
+    -webkit-box-shadow: 0 0 35px cyan; 
+    -moz-box-shadow: 0 0 35px cyan; 
+    box-shadow: 0 0 35px cyan;
+}
+.login:active {
+    position:relative;
+    top:1px;
+}
+
+.description {
+    font-size: 17px;
+    margin-top: 20px;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 35px;
+}
+
+#top_menu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: rgba(30,30,30,0.8);
+    color: #FFF;
+    padding: 13px;
+    z-index: 100;
+}
+#top_menu h1 {
+    display: inline-block;
+}
