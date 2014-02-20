@@ -1,6 +1,6 @@
 <?php
 
-$link = mysql_connect('itinera.db.11252176.hostedresource.com', 'itinera', 'Ahmed@123');
+$link = mysql_connect('localhost', 'user', 'password');
 if (!$link) {
     die('Not connected : ' . mysql_error());
 }
